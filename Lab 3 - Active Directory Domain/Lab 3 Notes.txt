@@ -1,0 +1,27 @@
+Log into server manager
+roles/features > active directory domain services > next > install
+clicked the flag, promote to primary domain controller
+new forest > root domain name: domain1.local
+Directory services restore mode (dsrm) pass: cmst;315
+netbios domain name: DOMAIN1
+**************************************************************************
+Setting up win1client
+30gb | 4 cores | 8gb
+win10 pro
+submitted product key
+**************************************************************************
+tools > active directories/users/comps > domain > new > organizationalunit
+Suzie is our first OU. Added users Jon and Eric. Jon is jrmartin, Eric is webbmaster
+ip: 10.136.213.114
+subnetmask: 255.255.252.0
+gateway: 10.136.212.1
+new dns server: 10.136.212.51 (our server)
+Changed computer name (under system) to win1client
+Changed domain to Domain1
+restarted
+**************************************************************************
+changing win1client to winClient1 to match the naming scheme we had with winServer1
+we also had to change the computer name in its settings to keep it matching winClient1
+server side > created a group in Suzie called 'Remote' > added our users to the group
+client side > local users > remote desktop users > properties > add > added 'Remote' group
+when RDP into client as user, have to add 'domain1\' to the front of the user name, ie. - domain1\jrmartin
