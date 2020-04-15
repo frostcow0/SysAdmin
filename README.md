@@ -6,3 +6,4 @@ Table of Contents
 [Lab 4](https://github.com/frostcow0/SysAdmin/tree/master/Lab%204%20-%20Groups%20and%20Permissions)<br>
 [Lab 5](https://github.com/frostcow0/SysAdmin/tree/master/Lab%205%20-%20Second%20DC%20and%20DFS)
 [Lab 6](https://github.com/frostcow0/SysAdmin/tree/master/Lab%206%20-%20Intro%20to%20Group%20Policy)<br>
+[Lab 7](https://github.com/frostcow0/SysAdmin/tree/master/Lab%207%20-%20Deploying%20policy%20settings%20and%20preferences)
