@@ -1,0 +1,11 @@
+Lab 6
+New admin password on 51: cmst:315
+tools > group policy management
+local > site > domain > users is heirarchy
+authenticated users are affected by default
+Set password expire to 1 day to change it back to cmst;315
+set teredo state to enabled, enterprise client. Comp. config, policies, administrative templaes, network, tcpip, ipv6 transition tech, set teredo state
+created "setdesktopwallpapertoblue1"
+edited, user config, policies, administrative templates, desktop, desktop, desktop wallpaper. Changed to C:\Wallpaper\Blue1
+ask about gpresult /s /u
+New gpo blocks control panel access in main, just to test.

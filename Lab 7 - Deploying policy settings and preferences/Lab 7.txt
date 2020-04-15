@@ -1,0 +1,8 @@
+Lab 7
+new admin password: ERIC1000!
+NET USER administrator cmst;315 /DOMAIN
+New password is cmst;315
+Policy only appies to wherever it's linked. Preferences are "permanent changes" in that they don't reverse themselves.
+Admin templates usually self regulate. They change registry keys, but after they are removed, they revert back.
+Applied lockout-idle on hr
+Applied Launch cmd on startup to it

@@ -1,0 +1,28 @@
+- Created folder on Server 1B that's shared with AccountingPeons
+- Made several back steps so that we could rename the Parent folder of the shared folder to 'Data 2'
+- Removed 'DOMAIN1\Users' from Security on C:\ drive. Could no longer read the folder, even when logged in as a user that was
+a part of 'DOMAIN1\Administrators'. We re-logged in as administrator and un-did what we broke.
+- Logged in as Alex on WinClient1 and added 'Data 2' as a network location to make sure that his access is working properly. It is.
+- Adding 'DFS Namespaces' & 'DFS Replication' roles to each of the servers.
+- Windows Searched 'DFS Management' because we couldn't find it.
+- Reading internet tutorial.
+- Right click Namespace, New Namespace, named it 'fileserver1.'
+- Clicked 'Next' until it said done.
+- Right click 'fileserver1,' New Folder, Browse for folder, adding 'Data.'
+- Added 'Data 2' as a Folder Target to 'Data.'
+- Went to Server 1B
+- Added new Namespace called 'fileserver2.'
+- Right click 'Replication' on 'DFS Management,' New Replication Group, Multipurpose Replication Group, Add both Servers as Members to
+the group, Full mesh, added 'Data' as the replication folder, added local path of winServer1B's 'Data 2' to the replication folder.
+- Don't need to set up schedule because we chose Continuous Update when setting up the group, or something.
+- Accessed fileserver1 by going to the path \\domain1\fileserver1
+- Alex is able to edit HR files now, completing defying Security logic. Not sure where to go from here.
+- Spent the next 30 minutes trying to make Alex not able to edit the HR folder. Couldn't.
+- Deleted Replication Group, scrapped old folders. Made a new folder in C:\ of winServer1 and added it as a folder to the namespace.
+- Don't use replication group and it won't be a p.o.s.
+
+
+
+- Troy Harding (thardy) HR
+- Joe Blow (jblow) Marketing
+- Alex Windhorst (windypwny) Accounting
